@@ -1,0 +1,146 @@
+.background-wrapper{
+    background: url("../img/background.png");
+    padding: 30px 20px;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 10px 10px 8px rgba(0,0,0,0.6);
+    position: relative;
+    z-index: -3;
+}
+img{
+    border-radius: 50%;
+    position: absolute;
+    width: 25%;
+    margin: 185px 0 0 185px;
+}
+
+.under {
+    position: absolute;
+    align-self: center;
+    box-sizing: border-box;
+    width: 200px; height: 200px;
+    right: 10%;
+    z-index: -2;
+    top: 30px;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px 6px rgba(0,0,0,0.9);
+    background:
+        /* ======= content-box ======= */
+        /* circular lines - 13, 19, 23 being prime numbers */
+                /* conic reflections */
+            conic-gradient(
+                    #cdcdcd, #9d9d9d, #808080,
+                    #bcbcbc, #c4c4c4, #e6e6e6,
+                    #dddddd, #a1a1a1, #7f7f7f,
+                    #8b8b8b, #bfbfbf, #e3e3e3,
+                    #d2d2d2, #a6a6a6, #858585,
+                    #8d8d8d, #c0c0c0, #e5e5e5,
+                    #d6d6d6, #9e9e9e, #828282,
+                    #8f8f8f, #bdbdbd, #e3e3e3, #cdcdcd)
+            content-box;
+}
+.top-stick-circle{
+    position: absolute;
+    align-self: center;
+    box-sizing: border-box;
+    width: 100px; height: 100px;
+    right: 14.8%;
+    bottom: 25.5em;
+    z-index: -2;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px 6px rgba(0,0,0,0.9);
+    background:
+        /* ======= content-box ======= */
+        /* circular lines - 13, 19, 23 being prime numbers */
+        /* conic reflections */
+            conic-gradient(
+                    #cdcdcd, #9d9d9d, #808080,
+                    #bcbcbc, #c4c4c4, #e6e6e6,
+                    #dddddd, #a1a1a1, #7f7f7f,
+                    #8b8b8b, #bfbfbf, #e3e3e3,
+                    #d2d2d2, #a6a6a6, #858585,
+                    #8d8d8d, #c0c0c0, #e5e5e5,
+                    #d6d6d6, #9e9e9e, #828282,
+                    #8f8f8f, #bdbdbd, #e3e3e3, #cdcdcd)
+            content-box;
+}
+.crystal{
+    position: relative;
+    z-index: 0;
+    transform-origin: 600px -450px;
+}
+.disk{
+    transform-origin: 280px 280px;
+    animation: disk 10s linear infinite;
+}
+
+@keyframes crystal {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(15deg);
+    }
+}
+@keyframes disk {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.stick{
+    position: absolute;
+    width: 20px;
+    z-index: -2;
+    background-color: yellow;
+    height: 400px;
+    bottom: 150px;
+    right: 20%;
+}
+
+.black-tip{
+    position: absolute;
+    width: 30px;
+    z-index: -2;
+    background-color: #36302f;
+    transform: rotate(30deg);
+    height: 80px;
+    bottom: 85px;
+    right: 21.8%;
+}
+.disk{
+    z-index: -1;
+    position: relative;
+}
+.disk_line {
+    height: 35em;
+    width: 35em;
+    border-radius: 50%;
+    background: repeating-radial-gradient(circle, #4a4a4a, #4a4a4a 1.5px, #0000 0px, #0000 10px);
+}
+
+.disk_bak{
+    width: 35em;
+    height: 35em;
+    border-radius: 50%;
+    background-color: #000;
+}
+.disl_blick_bottom{
+    position: absolute;
+    width: 35em;
+    height: 35em;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    background: radial-gradient(30% 60% at 50% 100%, #ffffff -97%, #00000000 81%);
+}
+.disl_blick_top{
+    position: absolute;
+    width: 35em;
+    height: 35em;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    background: radial-gradient(30% 60% at 50% -4%, #ffffff -97%, #00000000 81%);
+}
+
